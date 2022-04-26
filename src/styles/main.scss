@@ -16,6 +16,11 @@ body {
   font-size: 20px;
 }
 
+[type="checkbox"]:checked + label {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
 .container {
   margin: auto;
   margin-top: 10%;
@@ -40,7 +45,7 @@ body {
     border-bottom: 1px solid #333;
   }
 
-  .adding-task input:focus{
+  .adding-task input:focus {
     outline: none;
   }
 
@@ -79,10 +84,10 @@ body {
     }
 
     .task:last-child {
-      margin-bottom: none;
+      margin-bottom: 0;
     }
 
-    .task::after{
+    .task::after {
       position: absolute;
       content: '';
       right: 0;
@@ -94,7 +99,7 @@ body {
     }
   }
 
-  button{
+  button {
     display: block;
     padding: 10px 10px;
     text-align: center;
@@ -103,9 +108,4 @@ body {
     width: 100%;
     cursor: pointer;
   }
-}
-
-[type="checkbox"]:checked + label {
-  opacity: .5;
-  text-decoration: line-through;
 }
