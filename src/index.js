@@ -1,36 +1,17 @@
 import './styles/main.scss';
+import Tasks from './modules/ClassStore.js';
 
-const todoTasks = document.querySelector('.todo-tasks');
+const addForm = document.querySelector('#add-task');
 
-const tasks = [
-  {
-    description: 'Task one',
-    complete: false,
-    index: 5,
-  },
+const tasksCollection = new Tasks();
+tasksCollection.displayTasks();
 
-  {
-    description: 'Task two',
-    complete: false,
-    index: 3,
-  },
-
-  {
-    description: 'Task three',
-    complete: false,
-    index: 4,
-  },
-];
-
-tasks.sort((taskOne, taskTwo) => { //eslint-disable-line
-  return taskOne.index - taskTwo.index;
-}).forEach((task) => {
-  const taskElement = document.createElement('div');
-  taskElement.classList.add('task');
-  todoTasks.appendChild(taskElement);
-  taskElement.innerHTML = `
-  <input type="checkbox" id="${task.index}" />
-  <label for="${task.index}">${task.description}</label>
-  <span>&cross;</span>
-  `;
+addForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const inputTaskValue = document.querySelector('#input-add-task').value;
+  if (inputTaskValue === null || inputTaskValue === '') return;
+  tasksCollection.addTask(inputTaskValue);
+  document.querySelector('#input-add-task').value = '';
 });
+
+document.querySelector('.reflesh').addEventListener('click', tasksCollection.displayTasks);
