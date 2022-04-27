@@ -2,6 +2,7 @@
 
 To do List App which have the following dunctionalities:
 
+- Webpack to Compile
 - Add a task
 - Remove task
 - Remove completed tasks
