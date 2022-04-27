@@ -16,11 +16,6 @@ body {
   font-size: 20px;
 }
 
-[type="checkbox"]:checked + textarea {
-  opacity: 0.5;
-  text-decoration: line-through;
-}
-
 textarea {
   border: none;
   width: 100%;
@@ -29,6 +24,11 @@ textarea {
   outline: none;
   font-size: 0.7rem;
   padding-top: 5px;
+}
+
+[type="checkbox"]:checked + textarea {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
 
 .container {
@@ -40,7 +40,7 @@ textarea {
   background-color: #fff;
   box-shadow: 0 5px 20px #333;
 
-  .todo-header{
+  .todo-header {
     position: relative;
 
     h6 {
@@ -57,7 +57,17 @@ textarea {
     }
   }
 
-  .adding-task{
+  button {
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    border: none;
+    color: #7b7b7b;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .adding-task {
     position: relative;
 
     button {
@@ -127,15 +137,5 @@ textarea {
       background: #333;
       opacity: 0.2;
     }
-  }
-
-  button {
-    display: block;
-    padding: 10px 10px;
-    text-align: center;
-    border: none;
-    color: #7b7b7b;
-    width: 100%;
-    cursor: pointer;
   }
 }
