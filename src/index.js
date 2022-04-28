@@ -14,4 +14,14 @@ addForm.addEventListener('submit', (e) => {
   document.querySelector('#input-add-task').value = '';
 });
 
-document.querySelector('.reflesh').addEventListener('click', tasksCollection.displayTasks);
+document.querySelector('.reflesh').addEventListener('click', () => {
+  tasksCollection.tasksArray = [];
+  localStorage.setItem('tasks', JSON.stringify(tasksCollection.tasksArray));
+  tasksCollection.displayTasks();
+});
+
+document.querySelector('.clear-completed').addEventListener('click', () => {
+  tasksCollection.tasksArray = tasksCollection.tasksArray.filter((task) => !task.complete);
+  localStorage.setItem('tasks', JSON.stringify(tasksCollection.tasksArray));
+  tasksCollection.displayTasks();
+});
