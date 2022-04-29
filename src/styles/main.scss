@@ -19,11 +19,14 @@ body {
 textarea {
   border: none;
   width: 100%;
-  height: 2em;
+  height: 2.5em;
   resize: none;
   outline: none;
-  font-size: 0.7rem;
-  padding-top: 5px;
+  font-size: 1rem;
+  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333;
 }
 
 [type="checkbox"]:checked + textarea {
@@ -67,18 +70,22 @@ textarea {
     cursor: pointer;
   }
 
+  button:hover {
+    text-decoration: underline;
+  }
+
   .adding-task {
     position: relative;
 
     button {
       position: absolute;
       top: 5px;
-      right: 5px;
-      width: 5px;
-      height: 5px;
-      background: #fff;
-      font-size: 10px;
-      color: black;
+      right: 10px;
+      width: 0;
+      height: 0;
+      background: transparent;
+      font-size: 15px;
+      color: #7b7b7b;
       font-weight: 400;
     }
   }
