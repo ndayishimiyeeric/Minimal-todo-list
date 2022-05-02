@@ -29,7 +29,7 @@ textarea {
   color: #333;
 }
 
-[type="checkbox"]:checked+textarea {
+[type="checkbox"]:checked + textarea {
   opacity: 0.5;
   text-decoration: line-through;
 }
@@ -135,7 +135,6 @@ textarea {
       }
 
       small {
-        font-size: 25px;
         margin-top: 15px;
         padding-right: 8px;
         font-size: 15px;
