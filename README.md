@@ -9,6 +9,10 @@ To do List App which have the following dunctionalities:
 
 ## Usage
 
+## See It Live
+
+[Live Demo](https://ndayishimiyeeric.github.io/Minimal-todo-list/)
+
 Run Dev Server (Port 3000)
 
 ```
