@@ -11,6 +11,7 @@ module.exports = {
     filename: '[name].js',
     clean: true,
     assetModuleFilename: '[name][ext]',
+    publicPath: '/Minimal-todo-list/',
   },
   devtool: 'source-map',
   devServer: {
