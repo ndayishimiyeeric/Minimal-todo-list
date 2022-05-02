@@ -14,7 +14,7 @@ export default class Tasks {
       taskElement.innerHTML = `
         <input class="checkbox" type="checkbox" id="${task.index}" />
         <textarea class="textarea" for="${task.index}">${task.description}</textarea>
-        <span class="delete">&cross;</span>
+        <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
        `;
     });
 
