@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce85233928.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Minimal ToDo List</title>
+  <script defer src="/Minimal-todo-list/bundle.js"></script></head>
+  <body>
+    <div class="container">
+      <div class="todo-header">
+        <h6>Today's Todo</h6>
+        <i class="fa-solid fa-arrow-rotate-left reflesh"></i>
+      </div>
+      <div class="todo-body">
+        <div class="task-creator">
+          <form class="adding-task" id="add-task">
+            <input
+              type="text"
+              class="new-task"
+              id="input-add-task"
+              placeholder="Add new task here"
+              required
+            />
+            <button class="addbtn">+</button>
+          </form>
+        </div>
+        <div class="todo-tasks">
+          <!-- <div class="task">
+            <input type="checkbox" id="task-1" />
+            <label for="task-1">the first task</label>
+            <span>&cross;</span>
+          </div>
+          <div class="task">
+            <input type="checkbox" id="task-2" />
+            <label for="task-2">the second task</label>
+            <span>&cross;</span>
+          </div> -->
+        </div>
+        <button class="clear-completed">Clear all completed</button>
+      </div>
+    </div>
+  </body>
+</html>
